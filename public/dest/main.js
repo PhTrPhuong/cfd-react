@@ -331,7 +331,7 @@ $(document).ready(function () {
     //     $(this).find(".boxorder__pay-tooltip").show();
     // });
 
-    $(window).on("load", () => {
-        $(".loading").addClass("--hide");
-    });
+    // $(window).on("load", () => {
+    //     $(".loading").addClass("--hide");
+    // });
 });

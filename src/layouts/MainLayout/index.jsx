@@ -1,12 +1,12 @@
 import { MainContextProvider } from "@/context/MainContext";
-import AuthModal from "../../components/AuthModal";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import Navbar from "../../components/Navbar";
-import Overlay from "../../components/Overlay";
-import PageLoading from "../../components/PageLoading";
 import { Outlet } from "react-router-dom";
 import AuthContextProvider from "@/context/AuthContext";
+import PageLoading from "@/components/PageLoading";
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
+import Overlay from "@/components/Overlay";
+import AuthModal from "@/components/AuthModal";
+import Footer from "@/components/Footer";
 
 const MainLayout = ({ children }) => {
     return (

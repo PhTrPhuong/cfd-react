@@ -1,7 +1,13 @@
 import { Spin } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
 
 const PageLoading = () => {
+    useEffect(() => {
+        $(window).on("load", () => {
+            $(".loading").addClass("--hide");
+        });
+    }, []);
+
     return (
         <div className="loading">
             <Spin />

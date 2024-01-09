@@ -3,8 +3,8 @@ import MyInfo from "./MyInfo";
 import MyCourse from "./MyCourse";
 import MyPayment from "./MyPayment";
 import { NavLink, Navigate, Outlet } from "react-router-dom";
-import PATHS from "../../constants/path";
 import { useAuthContext } from "@/context/AuthContext";
+import PATHS from "@/constants/path";
 
 const StudentProfilePage = () => {
     // const isLogin = false;
