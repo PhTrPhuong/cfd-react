@@ -19,6 +19,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import PrivateRoute from "./components/PrivateRoute";
 import PATHS from "./constants/path";
 import PageLoading from "./components/PageLoading";
+import ReduxPage from "./pages/ReduxPage";
 
 const MainLayout = lazy(() => import("@/layouts/MainLayout/index"));
 const ContactPage = lazy(() => import("@/pages/ContactPage/index"));
@@ -84,6 +85,7 @@ function App() {
                             </Route>
                         </Route>
 
+                        <Route path="/redux" element={<ReduxPage />} />
                         <Route path="*" element={<Page404 />} />
                     </Route>
                 </Routes>
