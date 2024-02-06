@@ -7,7 +7,6 @@ import { formatCurrency, formatDate } from "@/utils/format";
 import Button from "../Button";
 import { COURSE_ITEM_TYPE } from "@/constants/general";
 
-// type: Normal / Coming ---> chia làm 2 loại dùng để render course item với 2 layout khác nhau.
 const CourseItem = ({
     type = COURSE_ITEM_TYPE.normal,
     image,
@@ -53,11 +52,7 @@ const CourseItem = ({
                         {startDate && (
                             <div className="labeltext">
                                 <span className="label --blue">Ngày khai giảng</span>
-                                <p className="title --t2">
-                                    {/* {moment(startDate).format("DD/MM/YYYY")} */}
-                                    {/* --- Định nghĩa formatDate xử lý date với format ---*/}
-                                    {formatDate(startDate)}
-                                </p>
+                                <p className="title --t2">{formatDate(startDate)}</p>
                             </div>
                         )}
 
@@ -70,9 +65,6 @@ const CourseItem = ({
                     </div>
 
                     <div className="btnwrap">
-                        {/* <Link to={orderPath} className="btn btn--primary">Đăng Ký Học</Link>
-                        <Link to={detailPath} className="btn btn--border --black">Xem chi tiết</Link> */}
-
                         {/* // ---- Modify Button nhận vào props link ---- // */}
                         <Button link={orderPath}>Đăng Ký Học</Button>
                         <Button link={detailPath} variant="border">

@@ -58,16 +58,6 @@ const HeroSection = ({
                     <div className="pricebox">
                         <p className="title --t3 --white">{price} VND</p>
                     </div>
-                    {/* <a
-                        href="https://www.facebook.com/sharer/sharer.php?sdk=joey&u=https://cfdcircle.vn/khoa-hoc/khoa-hoc-lap-trinh-frontend-master-30&display=popup&ref=plugin&src=share_button"
-                        onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')"
-                        className="sharebox s--white"
-                    >
-                        Chia sẻ
-                        <i>
-                            <img src="https://cfdcircle.vn/img/iconshare.svg" alt="CFD Circle" />
-                        </i>
-                    </a> */}
                     <a href={"#"} onClick={_onCopyLink} className="sharebox s--white">
                         Chia sẻ
                         <i>

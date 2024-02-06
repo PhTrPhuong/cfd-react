@@ -6,8 +6,6 @@ import { useLocation } from "react-router-dom";
 import PATHS from "@/constants/path";
 
 const Header = () => {
-    /* -- sử dụng hook useLocation để theo dõi sự thay đổi của pathname trên url 
-        isTransparent: xác định pathname hiện tại có thuộc danh sách các trang dùng hiệu ứng transparent header không? -- */
     const { pathname } = useLocation();
     const isTransparent = [PATHS.HOME, PATHS.ABOUT].includes(pathname);
 

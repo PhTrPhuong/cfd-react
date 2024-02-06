@@ -26,33 +26,6 @@ const rules = {
 };
 
 const ContactForm = ({ handleFormSubmit }) => {
-    // const [form, setForm] = useState({
-    //     name: "",
-    //     email: "",
-    //     phone: "",
-    //     topic: "",
-    //     content: "",
-    // });
-    // const [error, setError] = useState({});
-
-    // Advance - Nâng cao
-    // NOTE: không cần sử dụng function này vì đã được generate ra từ register function
-    // const _onChange = (e) => {
-    //   const value = e.target.value;
-    //   const name = e.target.name;
-    //   setForm({ ...form, [name]: value });
-    // };
-    // Register function
-    // const register = (registerField) => {
-    //     return {
-    //         name: registerField,
-    //         value: form[registerField],
-    //         error: error[registerField],
-    //         onChange: (e) =>
-    //             setForm({ ...form, [registerField]: e.target.value }),
-    //     };
-    // };
-
     const { form, error, setError, register, validate } = useForm(
         {
             name: "",
@@ -68,8 +41,6 @@ const ContactForm = ({ handleFormSubmit }) => {
         event.preventDefault();
 
         // Start validate - Advance
-        // const errorObject = validate(rules, form);
-        // setError(errorObject);
         const errorObject = validate();
         // end validate advance
 

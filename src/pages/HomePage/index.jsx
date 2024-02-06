@@ -17,13 +17,6 @@ import { questionService } from "@/services/questionService";
 import { galleryService } from "@/services/galleryService";
 
 const HomePage = () => {
-    // const {
-    //     data: courses, error: coursesError, loading: coursesLoading, refetch,
-    // } = useQuery(() => axios.get("https://cfdcourses.cfdcircle.vn/api/v1/courses"));
-    // console.log("courses", courses);
-    // console.log("coursesError", coursesError);
-    // console.log("coursesLoading", coursesLoading);
-
     /* ---- Xử lý data - Courses ---- */
     const {
         data: coursesData,

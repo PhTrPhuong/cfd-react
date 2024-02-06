@@ -15,7 +15,6 @@ const AuthContextProvider = ({ children }) => {
 
     /* Tạo state showedModal lưu trữ modalType */
     const [showedModal, setShowedModal] = useState(""); // register || login || ""
-    // console.log("showedModal", showedModal);
 
     /* ---- */
     const [profile, setProfile] = useState({});
@@ -54,7 +53,6 @@ const AuthContextProvider = ({ children }) => {
                 const { token: accessToken, refreshToken } = res.data.data || {};
                 /* Lưu token trong: localStorage || Cookie */
                 tokenMethod.set({ accessToken, refreshToken });
-                // localStorage.setItem("token", JSON.stringify({accessToken, refreshToken}));
                 /* Lấy thông tin profile */
                 handleGetProfile();
                 /* Đóng modal & thông báo thành công */
@@ -112,7 +110,6 @@ const AuthContextProvider = ({ children }) => {
         // call api
         try {
             const res = await authService.getProfile();
-            // console.log("res", res);
             if (res?.data?.data) {
                 setProfile(res.data.data);
             }

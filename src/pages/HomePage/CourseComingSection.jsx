@@ -79,15 +79,6 @@ const CourseComingSection = ({ courses = [], loading = false }) => {
                         })}
                 </div>
             )}
-
-            {/* {courses?.length > 0 && (
-                <div className="coursecoming__list" id="coursecoming__slider">
-                    {courses.map((course, index) => {
-                        console.log("course", course);
-                        return <CourseItem key={course?.id || index} {...course} />;
-                    })}
-                </div>
-            )} */}
         </section>
     );
 };

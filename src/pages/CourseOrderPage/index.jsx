@@ -52,8 +52,6 @@ const CourseOrderPage = () => {
     const handlePaymentMethodChange = (payment) => {
         setPaymentMethod(payment);
     };
-    // console.log("form", form);
-    // console.log("paymentMethod", paymentMethod);
 
     /* -- RESET payment, set initialValue payment-- */
     const orderedCourse = courseInfo?.find((item) => item?.course?.slug === courseSlug);

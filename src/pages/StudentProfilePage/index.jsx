@@ -7,12 +7,6 @@ import { useAuthContext } from "@/context/AuthContext";
 import PATHS from "@/constants/path";
 
 const StudentProfilePage = () => {
-    // const isLogin = false;
-    // if (!isLogin) {
-    //     // back to home
-    //     return <Navigate to="/" />;
-    // }
-
     /* --Lấy data từ useContext-- */
     const { profile, handleGetProfileCourse, handleGetProfilePayment } = useAuthContext();
     const { firstName, introduce, email, phone, website } = profile || {};
@@ -60,17 +54,6 @@ const StudentProfilePage = () => {
                                     </a>
                                 </li>
                             </ul>
-                            {/* <div className="social">
-                                <a href="#">
-                                    <img src="/img/icon-facebook-dark.svg" alt />
-                                </a>
-                                <a href="#">
-                                    <img src="/img/icon-linkedin-dark.svg" alt />
-                                </a>
-                                <a href="#">
-                                    <img src="/img/icon-youtube-dark.svg" alt />
-                                </a>
-                            </div> */}
                         </div>
                     </div>
                     <div className="tabwrap">

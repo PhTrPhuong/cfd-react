@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import ContactTitle from "./ContactTitle";
 import ContactSidebar from "./ContactSidebar";
-import ContactFormBasic from "./ContactFormBasic";
-import ContactFormAdvance from "./ContactFormAdvance";
 import ContactForm from "./ContactForm";
 import { useNavigate } from "react-router-dom";
 import PATHS from "../../constants/path";
@@ -11,37 +9,7 @@ import { subscribesService } from "../../services/subscribesService";
 import useMutation from "@/hooks/useMutation";
 
 const ContactPage = () => {
-    // const handleFormSubmit = (formData) => {
-    //     // call API
-    //     console.log("formData", formData);
-    //     setTimeout(() => {
-    //         // back to home
-    //         navigate(PATHS.HOME);
-    //         // navigate("/");
-    //     }, 1000);
-    // };
-
     const navigate = useNavigate();
-    // const [loading, setLoading] = useState(false);
-    // const handleFormSubmit = async (formData) => {
-    //   setLoading(true);
-    //   const payload = {
-    //     name: formData?.name || "",
-    //     email: formData?.email || "",
-    //     phone: formData?.phone || "",
-    //     title: formData?.topic || "",
-    //     description: formData?.content || "",
-    //   };
-    //   try {
-    //     const res = await subscribesService.subscribes(payload);
-    //     if (res.status === 201) {
-    //       navigate(PATHS.HOME);
-    //     }
-    //   } catch (error) {
-    //   } finally {
-    //     setLoading(false);
-    //   }
-    // };
 
     const { execute, data, error, loading } = useMutation(subscribesService.subscribes);
 
@@ -73,9 +41,6 @@ const ContactPage = () => {
                 <div className="container">
                     <div className="wrapper">
                         <ContactSidebar />
-
-                        {/* <ContactFormBasic handleFormSubmit={handleFormSubmit} /> */}
-                        {/* <ContactFormAdvancehandleFormSubmit={handleFormSubmit}/> */}
                         <ContactForm handleFormSubmit={handleFormSubmit} />
                     </div>
                 </div>

@@ -1,22 +1,8 @@
 import { Empty } from "antd";
 import React, { useState } from "react";
 
-/* -- Tạo component Accordion: nhận vào props label và data, từ đó render tương ứng -- */
 const Accordion = ({ label = "", data = [], defaultActiveIndex = -1 }) => {
-    /* Ứng dụng State để lưu trữ activeIndex mỗi khi Accordion Item được click. 
-            Sau đó so sánh index và điều chỉnh class active */
     const [activeId, setActiveId] = useState(defaultActiveIndex);
-
-    // const [activeId, setActiveId] = useState("");
-    // const _onTitleClick = (e, id) => {
-    //     e.stopPropagation();
-    //     // if (id !== activeId) {
-    //     //     setActiveId(id);
-    //     // } else {
-    //     //     setActiveId("");
-    //     // }
-    //     setActiveId(id !== activeId ? id : "");
-    // };
 
     return (
         <div className="accordion">

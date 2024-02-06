@@ -121,40 +121,6 @@ const RegisterForm = () => {
                     {...register("confirmPassword")}
                 />
 
-                {/* <div className="form-group">
-                    <input
-                        defaultValue
-                        type="text"
-                        className="form__input formerror"
-                        placeholder="Họ và tên"
-                    />
-                    <p className="error">Họ và tên không được để trống</p>
-                </div>
-                <div className="form-group">
-                    <input
-                        defaultValue
-                        type="email"
-                        className="form__input"
-                        placeholder="Email"
-                    />
-                </div>
-                <div className="form-group">
-                    <input
-                        defaultValue
-                        type="password"
-                        className="form__input"
-                        placeholder="Mật khẩu"
-                    />
-                </div>
-                <div className="form-group">
-                    <input
-                        defaultValue
-                        type="password"
-                        className="form__input"
-                        placeholder="Xác nhận mật khẩu"
-                    />
-                </div> */}
-
                 <p className="form__argee">
                     Với việc đăng ký, bạn đã đồng ý
                     <Link

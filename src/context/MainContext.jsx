@@ -9,7 +9,6 @@ export const MainContextProvider = ({ children }) => {
     const { pathname } = useLocation();
 
     /* -- Xử lí data cần truyền -- */
-    // khởi tạo các state, function (dùng chung) để truyền xuống children thông qua value object của MainContext.Provider
     const [isShowNavbar, setIsShowNavbar] = useState(false);
 
     // khi pathname thay đổi thì, navbar ẩn & scrolltotop

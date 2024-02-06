@@ -88,24 +88,6 @@ const LoginForm = () => {
                     {...register("password")}
                 />
 
-                {/* <div className="form-group">
-                    <input
-                        defaultValue
-                        type="email"
-                        className="form__input formerror"
-                        placeholder="Email"
-                    />
-                    <p className="error">Email không được để trống</p>
-                </div>
-                <div className="form-group">
-                    <input
-                        defaultValue
-                        type="password"
-                        className="form__input"
-                        placeholder="Mật khẩu"
-                    />
-                </div> */}
-
                 <Button className="form__btn-register" type="submit">
                     Đăng nhập
                 </Button>

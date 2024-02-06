@@ -53,10 +53,7 @@ const HeroSection = () => {
                     src="/img/bg-hero-home.jpg"
                     alt="CFD Training Background"
                 />
-                {/* <div
-                    className="hero__background-video"
-                    data-src="/video/CFD-video-bg2.mp4"
-                ></div> */}
+
                 <div className="hero__background-video">
                     <video preload="none" autoPlay loop muted playsInline>
                         <source src="/video/CFD-video-bg2.mp4" type="video/mp4" />
